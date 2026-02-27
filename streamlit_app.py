@@ -22,7 +22,7 @@ if menu == "Gerar Conteúdo":
     if st.button("Gerar com IA"):
         if tema:
             with st.spinner('A IA está trabalhando...'):
-                model = genai.GenerativeModel('gemini-1.5-flash-latest')
+                model = genai.GenerativeModel('gemini-pro')
                 response = model.generate_content(tema)
                 st.success("Pronto!")
                 st.write(response.text)

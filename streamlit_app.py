@@ -14,7 +14,7 @@ st.title("📱 AI Assistant Manager")
 
 # Este é o modelo 'gemini-pro', que é o mais compatível com o plano gratuito
 try:
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.0-pro')
 except:
     st.error("Erro ao carregar o modelo. Verifique sua chave API.")
 
